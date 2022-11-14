@@ -1,0 +1,35 @@
+.form1-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.login-form {
+  max-width: 350px;
+  margin: auto !important;
+  padding: 20px;
+  padding-top: 40px;
+  border: 0.1px solid #80808029;
+  border-radius: 5px;
+}
+
+.form-button {
+  text-align: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ant-row {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=Form1.css.map */

@@ -1,0 +1,64 @@
+.header-title{
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 113px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px  #0C07F8;
+    text-align: center;
+    transition: color 0.5s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+        color: #0c07f8 !important;
+    }
+        @media only screen and (min-width: 768px) and (max-width: 1000px) {
+            font-size: 120px;
+            line-height: 243px;
+        }
+        @media only screen and (min-width: 1000px) {
+            font-size: 160px;
+            line-height: 213px;
+            margin-left: 18px;
+            text-align: left;
+        }
+}
+
+.header-subtitle{
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    color: #0C07F8;
+    text-align: center;
+    @media only screen and (min-width: 1000px) {
+            font-weight: 500;
+            font-size: 50px;
+            margin-left: 24px;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+}
+
+.header-arrow{
+    margin-top: 150px;
+    stroke-width: 0.1;
+    stroke: #0c07f8;
+    fill:#FFF!important;
+    height: 200px !important;
+    width: 350px !important;
+    transition: fill 1s;
+    transition-timing-function: ease-in-out;
+    &:hover{
+        fill: #0c07f8 !important;
+    }
+    
+}
+
+
+.header-arrow-wrapper{
+    width: 100%;
+    text-align: center;
+}

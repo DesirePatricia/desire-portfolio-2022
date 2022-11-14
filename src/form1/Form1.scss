@@ -1,0 +1,26 @@
+.form1-wrapper{
+    width: 100%;
+    text-align: center;
+}
+
+.login-form{
+    max-width: 350px;
+    margin: auto !important;
+    padding: 20px;
+    padding-top: 40px;
+    border:0.1px solid #80808029;
+    border-radius: 5px;
+    
+}
+
+.form-button{
+    text-align: center;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: center;
+}
+
+.ant-row{
+    align-content: center;
+    justify-content: space-around;
+}
