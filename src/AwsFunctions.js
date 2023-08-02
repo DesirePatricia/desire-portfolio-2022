@@ -1,9 +1,9 @@
 import * as AWS from 'aws-sdk';
 
 AWS.config.update({
-    region: 'us-east-2',
-    secretAccessKey: '0a4iEyeBBZdI8VhntH+2mfSZ0IDJlH1w2r2asueQ',
-    accessKeyId: 'AKIATO7GRWGCSLFKOLAA'
+    region: process.env.region,
+    secretAccessKey: process.env.secretAccessKey,
+    accessKeyId: process.env.accessKeyId
 });
 const docClient = new AWS.DynamoDB.DocumentClient()
 
@@ -44,7 +44,7 @@ export const putData = async (tableName, data) => {
 export const deleteItem = async (tableName, data) => {
     var params = {
         TableName: tableName,
-        Key: {"Username": data.Username}
+        Key: {"Email": data.Email}
     }
 
     try {
@@ -58,7 +58,7 @@ export const deleteItem = async (tableName, data) => {
 export const getData = async (tableName, inputData) =>{
     var params = {
         TableName: tableName,
-        Key: { "Username": inputData.Username}
+        Key: { "Email": inputData.Email}
     };
     let result = false;
     await docClient.get(params, function (err, data) {
@@ -74,7 +74,7 @@ export const getData = async (tableName, inputData) =>{
 export const checkSignin = async (tableName, inputData) => {
     var params = {
         TableName: tableName,
-        Key: { "Username": inputData.Username }
+        Key: { "Email": inputData.Email }
     };
     let result = true;
     await docClient.get(params, function (err, data) {

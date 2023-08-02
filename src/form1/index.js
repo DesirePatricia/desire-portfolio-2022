@@ -47,12 +47,8 @@ const Form1 = () => {
                 }}
             >{({
                 values,
-                errors,
-                touched,
                 handleChange,
-                handleBlur,
                 handleSubmit,
-                isSubmitting,
                 onFinishFailed
             }) => (
                 <Form

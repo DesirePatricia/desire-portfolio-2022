@@ -1,16 +1,13 @@
 import './App.css';
-import Header from './common/Header';
-import Form1 from './form1';
-import LoginTable from './loginTable';
-import Login from './login';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './common/Home';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Form1/>
-      <LoginTable/>
-      <Login/>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </div>
   );
 }

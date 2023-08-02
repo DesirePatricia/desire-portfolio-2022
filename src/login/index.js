@@ -1,5 +1,6 @@
 import '../form1/Form1.css';
 import { Formik } from 'formik';
+import { Helmet } from 'react-helmet'
 import { Button, Input, Form, notification } from 'antd';
 import { getData, fetchData } from '../AwsFunctions';
 
@@ -38,6 +39,7 @@ const Login = () => {
     }
     return (
         <div className="form1-wrapper">
+            <Helmet title="Login" />
             <h1>Log In</h1>
             <Formik
                 initialValues={{
